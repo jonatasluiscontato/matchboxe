@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Boxe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">MATCH BOXE</div>
+      <div class="slogan">Conecte, Lute e Vença</div>
+    </div>
+    <div class="header-actions">
+      <div class="coins-display">💰 <span id="user-coins">0</span> FightCoins</div>
+      <button id="deposit-btn" class="btn btn-outline">Depositar</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <h1>Levando atletas iniciantes ao reconhecimento nível profissional</h1>
+      <p class="lead">A combinação de Tinder + Bet365 + UFC Fight Pass — crie, aposte e descubra novos campeões.</p>
+    </section>
+
+    <section class="fighters-section">
+      <h2>Atletas em destaque</h2>
+      <div class="fighters-container" id="fighters-container">
+        <!-- Cards injected by JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Deposit Modal -->
+  <div id="deposit-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <h3>Depositar e converter em FightCoins</h3>
+      <p>Insira o valor em BRL que deseja depositar. Taxa de conversão: <strong>1 BRL = 10 FightCoins</strong>.</p>
+      <input id="deposit-amount" type="number" min="1" placeholder="Valor em R$" />
+      <div class="modal-actions">
+        <button id="confirm-deposit" class="btn">Confirmar Depósito</button>
+        <button id="cancel-deposit" class="btn btn-ghost">Cancelar</button>
+      </div>
+      <p class="modal-note">Este é um simulador: movimentação local no navegador (sem integração de pagamento).</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div>© 2025 Match Boxe – Conecte, Lute e Vença</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
